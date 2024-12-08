@@ -1,0 +1,17 @@
+body{
+    background-color: aqua;
+}
+h1{
+    text-align: center;
+}
+div{
+    text-align: center;
+}
+.button{
+    background-color: navy;
+    color:white;
+    font-size: 18px;
+}
+.abc{
+    font-size: 40px;
+}
