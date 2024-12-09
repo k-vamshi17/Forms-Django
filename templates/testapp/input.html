@@ -8,13 +8,18 @@
     <link rel="stylesheet" href="{% static 'css/form1.css' %}">
 </head>
 <body>
-    <h1>Student Input Form</h1>
+    
     <div class="container">
+        {% if submitted %}
+        <h1> Student with the name:{{sname}} processed succesfully</h1>
+        <h2>Enter next student information</h2>
+        {% else %}
+        <h1>Student Input Form</h1>
+        {% endif %}
         <form class="abc" method="post">
             {{form.as_p}}
             {% csrf_token %}
             <input class="button" type="submit" name="" value="Submit">
-           
         </form>
     </div>
 </body>
